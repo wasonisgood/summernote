@@ -1,0 +1,2 @@
+# summernote
+summernote多檔上傳改用file陣列上傳，上傳檔案轉換成webp，改善刪除檔案時絕對路徑轉相對路徑
