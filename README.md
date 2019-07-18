@@ -1,6 +1,6 @@
 
 # 功能：改寫了summernote的圖片上傳到伺服器路徑伺服器上刪除圖片的功能<br>
-## <br>教學文部落格在此：https://otherwherebeous.com
+## <br>教學文部落格在此：https://otherwherebeours.com
 <br><br>
 ### 1，首先，聲明，先去自行了解什麼是summernote所見即所得編譯器：https：//summernote.org/
 個人看法：主要是為了後台可以進行編輯，就好比你在fookbook上po文，也是基於所見即所得編譯器編譯器來寫的。
