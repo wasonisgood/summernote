@@ -6,12 +6,13 @@
 個人看法：主要是為了後台可以進行編輯，就好比你在fookbook上po文，也是基於所見即所得編譯器編譯器來寫的。
 <br><br>
 ### 2，為什麼選用summernote？原因有幾點
-（2.1）summernote支持bootstrap前端框架：http：//www.bootcss.com/,現在bootstrap使用非常普遍了，最主要的亮點就是響應式佈局，而且手機（移動設備）優先。非常適合現在龐大的手機用戶瀏覽。所以summernote也非常適合在手機進行文本編輯
+（2.1）summernote支持bootstrap前端框架：http://www.bootcss.com/ ,現在bootstrap使用非常普遍了，最主要的亮點就是響應式佈局，而且手機（移動設備）優先。非常適合現在龐大的手機用戶瀏覽。所以summernote也非常適合在手機進行文本編輯
 
 （2.2）自舉也有自帶的所見即所得編譯器：？？自舉所見即所得，但是為什麼不用這個呢原因是summernote可以插入視頻但是其他很多所見即所得編譯器也可以插入視頻啊我說的是國內的視頻，其他國外所見即所得編譯器大多數只能插入YouTube上了，而summernote很神奇，其他網站也行的也行，所以非常推薦編輯文本時候需要插入視頻的小編使用summernote。
 
 
-（2.3）summernote真的非常簡潔，但是功能卻很完善，還可以自定義工具欄，表情符號也不例外，但是由於關於summernote插入表情符號的文章用法大部分都是在本地加載表情符號，可以參考一下：http：//github.com/summernote/awesome-summernote和https://github.com/nilobarp/summernote-ext-emoji,但是對於在本地加載表情符號，會跟我刪除圖片發生衝突了，所以我就沒有加上的表情符號功能，還有一種方法是通過AJAX獲取api.github.emoji伺服器的鏈接，再通過鏈接添加，不過這個啊俊真不會用了。
+（2.3）summernote真的非常簡潔，但是功能卻很完善，還可以自定義工具欄，表情符號也不例外，但是由於關於summernote插入表情符號的文章用法大部分都是在本地加載表情符號，可以參考一下：http://github.com/summernote/awesome-summernote 和https://github.com/nilobarp/summernote-ext-emoji
+,但是對於在本地加載表情符號，會跟我刪除圖片發生衝突了，所以我就沒有加上的表情符號功能，還有一種方法是通過AJAX獲取api.github.emoji伺服器的鏈接，再通過鏈接添加，不過這個啊俊真不會用了。
 
 （2.4）summernote可以直接通過summernote（“code”）獲取文本框的值，即是HTML的體代碼，可以直接上傳到數據庫或者提交給後台。
 <br><br>
@@ -35,7 +36,7 @@
 （4.3）修改完php.ini文件後一定要重啟伺服器，否則即使改了也會出錯
 （4.4)linux主機下上傳資料夾權限問題：一定要保證伺服器帳號對此資料夾有讀寫之權，如在測試環境建議使用777,以避免不必要的bug
 (4.5)權限修改為777方法 [sudo chmod 777 資料夾路徑 -R]
-### 5,為什麼要轉成WebP,Webp的好處？
+### 5，為什麼要轉成WebP,Webp的好處？
 (5.1) 在各大互聯網公司已經使用得很多了，國外的有Google（自家的東西肯定要用啦，Chrome Store 甚至已全站使用WebP）、Facebook 和ebay
 (5.2)WebP 的優勢體現在它具有更優的圖像數據壓縮算法，能帶來更小的圖片體積，而且擁有肉眼識別無差異的圖像質量；同時具備了無損和有​​損的壓縮模式、Alpha 透明以及動畫的特性，在JPEG 和PNG 上的轉化效果都相當優秀、穩定和統一。
 (5.3)PNG 轉WebP 的壓縮率要高於PNG 原圖壓縮率，同樣支持有損與無損壓縮轉換後的WebP 體積大幅減少，圖片質量也得到保障（同時肉眼幾乎無法看出差異）轉換後的WebP 支持Alpha 透明和24-bit 顏色數，不存在PNG8 色彩不夠豐富和在瀏覽器中可能會出現毛邊的問題
